@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+        <title>Sistema de Gestão Integrada</title>
+        <!-- BOOTSTRAP CORE STYLE  -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- FONT AWESOME ICONS  -->
+        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLE  -->
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      //Máscara para o telefone
+
+      function mascaraTelefone(objeto) {
+        if (objeto.value.length == 0)
+          objeto.value = '(' + objeto.value;
+
+        if (objeto.value.length == 3)
+          objeto.value += ')';
+
+        if (objeto.value.length == 9)
+          objeto.value += '-';
+      }
+    </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <strong>Email: </strong>contato@areamultimidia.com.br &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <strong>Suporte: </strong>(31)98742-2001
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END-->
+        <div class="navbar navbar-inverse set-radius-zero">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- LOGO HEADER END-->
+        <section class="menu-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="navbar-collapse collapse ">
+                            <ul id="menu-top" class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="menu-top-active" href="agenda.html">Agenda</a>
+                                </li>
+                                <li>
+                                    <a href="clientes.html">Clientes</a>
+                                </li>
+                                <li>
+                                    <a href="financeiro.html">Financeiro</a>
+                                </li>
+                                <li>
+                                    <a href="logout.html">Sair</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MENU SECTION END-->
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="page-head-line">Cadastrar agendamento</h4>
+                        <div class="row">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <!-- Form Name -->
+                                    <legend>Preencha os dados abaixo</legend>
+                                    <!-- Select Basic -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="atendente">Atendente</label>
+                                        <div class="col-md-5">
+                                            <select id="atendente" name="atendente" class="form-control">
+                                                <option value="1">Tony</option>
+                                                <option value="2">Edmilson</option>
+                                                <option value="3">Júlio</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="cliente">Cliente</label>
+                                        <div class="col-md-5">
+                                            <input id="cliente" name="cliente" type="text" placeholder="Digite o nome do cliente" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="nascimento">Nascimento</label>
+                                        <div class="col-md-5">
+                                            <input id="nascimento" name="nascimento" type="date" min="1998-01-01" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="profissao">Profissão</label>
+                                        <div class="col-md-5">
+                                            <input id="profissao" name="profissao" type="text" placeholder="Digite a profissão" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="telefone">Telefone</label>
+                                        <div class="col-md-5">
+                                            <input id="telefone" name="telefone" type="text" placeholder="Digite o telefone" class="form-control input-md" required="" maxlength="14" onkeypress="mascaraTelefone(this)">
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="email">Email</label>
+                                        <div class="col-md-5">
+                                            <input id="email" name="email" type="email" placeholder="Digite o email" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Select Basic -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="uf">Estado</label>
+                                        <div class="col-md-5">
+                                            <select id="uf" name="uf" class="form-control">
+                                                <option value="1">Option one</option>
+                                                <option value="2">Option two</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Select Basic -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="cidade">Cidade</label>
+                                        <div class="col-md-5">
+                                            <select id="cidade" name="cidade" class="form-control">
+                                                <option value="1">Option one</option>
+                                                <option value="2">Option two</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="bairro">Bairro</label>
+                                        <div class="col-md-5">
+                                            <input id="bairro" name="bairro" type="text" placeholder="Digite o Bairro" class="form-control input-md">
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="servico">Serviço Agendado</label>
+                                        <div class="col-md-5">
+                                            <input id="servico" name="servico" type="text" placeholder="Digite o nome do serviço agendado" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="Data e Hora">Data e Hora</label>
+                                        <div class="col-md-5">
+                                            <input id="Data e Hora" name="Data e Hora" type="datetime-local" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="horatermino">Término</label>
+                                        <div class="col-md-5">
+                                            <input id="horatermino" name="horatermino" type="time" placeholder="Término do Atendimento" class="form-control input-md">
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="valor">Valor</label>
+                                        <div class="col-md-5">
+                                            <input id="valor" name="valor" type="text" placeholder="Digite o valor" class="form-control input-md" required="">
+                                        </div>
+                                    </div>
+                                    <!-- Textarea -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="observacoes">Observações</label>
+                                        <div class="col-md-4">
+                                            <textarea class="form-control" id="observacoes" name="observacoes"></textarea>
+                                        </div>
+                                    </div>
+                                    <!-- Button (Double) -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="salvar"></label>
+                                        <div class="col-md-8">
+                                            <input type="submit" id="salvar" name="salvar" class="btn btn-info" value="Salvar">
+                                            <input type="reset" id="limpar" name="limpar" class="btn btn-danger" value="Limpar">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENT-WRAPPER SECTION END-->
+        <footer class="footer navbar-fixed-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        © 2016 &nbsp;Desenvolvido por :
+                        <a href="http://www.areamultimidia.com.br/" target="_blank" title="Área Multimídia - Desenvolvimento Web Multimídia, Mobile, Marketing Digital e SEO">Área Multimídia - Desenvolvimento Web Multimídia, Mobile, Marketing Digital e SEO</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER SECTION END-->
+        <!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+        <!-- CORE JQUERY SCRIPTS -->
+        <script src="assets/js/jquery-1.11.1.js"></script>
+        <!-- BOOTSTRAP SCRIPTS  -->
+        <script src="assets/js/bootstrap.js"></script>
+    </body>
+</html>

@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+        <title>Sistema de Gestão Integrada</title>
+        <!-- BOOTSTRAP CORE STYLE  -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- FONT AWESOME ICONS  -->
+        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLE  -->
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <strong>Email: </strong>contato@areamultimidia.com.br &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <strong>Suporte: </strong>(31)98742-2001
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END-->
+        <div class="navbar navbar-inverse set-radius-zero">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- LOGO HEADER END-->
+        <section class="menu-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="navbar-collapse collapse ">
+                            <ul id="menu-top" class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a class="menu-top-active" href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="agenda.html">Agenda</a>
+                                </li>
+                                <li>
+                                    <a href="clientes.html">Clientes</a>
+                                </li>
+                                <li>
+                                    <a href="financeiro.html">Financeiro</a>
+                                </li>
+                                <li>
+                                    <a href="logout.html">Sair</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MENU SECTION END-->
+        <div class="content-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="page-head-line">PAINEL ADMINISTRATIVO</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-success">
+                            Seja bem-vindo! Os próximos atendimentos encontram-se abaixo.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="dashboard-div-wrapper bk-clr-one">
+                            <i class="fa fa-calendar dashboard-div-icon"></i>
+                            <div class="progress progress-striped active">
+                                <hr>
+                            </div>
+                            <h5>Atendimentos do dia:</h5>
+                            <p>
+                              1
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="dashboard-div-wrapper bk-clr-two">
+                            <i class="fa fa-close dashboard-div-icon"></i>
+                            <div class="progress progress-striped active">
+                                <hr>
+                            </div>
+                            <h5>Atendimentos cancelados:</h5>
+                            <p>
+                              0
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="dashboard-div-wrapper bk-clr-three">
+                            <i class="fa fa-check dashboard-div-icon"></i>
+                            <div class="progress progress-striped active">
+                                <hr>
+                            </div>
+                            <h5>Atendimentos realizados:</h5>
+                            <p>
+                              15
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5>
+                            Atendimentos de hoje:</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+</div>
+                </div>
+                <div class="panel panel-success filterable">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Clientes</h3>
+                        <div class="pull-right">
+                            <button class="btn btn-success btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span> Filtro</button>
+                        </div>
+                    </div>
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                          <tr class="filters">
+                              <th><input type="text" class="form-control" placeholder="Clientes" disabled></th>
+                              <th><input type="text" class="form-control" placeholder="Telefone" disabled></th>
+                              <th><input type="text" class="form-control" placeholder="Serviço" disabled></th>
+                              <th><input type="text" class="form-control" placeholder="Atendente" disabled></th>
+                              <th><input type="text" class="form-control" placeholder="Valor" disabled></th>
+                              <th><input type="text" class="form-control" placeholder="Status" disabled></th>
+                              <th>Editar</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Marcus Silva</td>
+                                <td>98742-2001</td>
+                                <td>Depilação</td>
+                                <td>Tony</td>
+                                <td>R$50,00</td>
+                                <td>
+                                  <select id="status" name="status" class="form-control">
+                                      <option value="0">Selecione</option>
+                                      <option value="1">Pendente</option>
+                                      <option value="2">Atendido</option>
+                                      <option value="3">Cancelado</option>
+                                  </select>
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary btn-small">
+                                      <span class="glyphicon glyphicon-pencil"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="pagination pull-right">
+                  <li class="disabled">
+                    <a href="#"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                  </li>
+                  <li class="active">
+                    <a href="#">1</a>
+                  </li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#">4</a>
+                  </li>
+                  <li>
+                    <a href="#">5</a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CONTENT-WRAPPER SECTION END-->
+<footer class="footer navbar-fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                © 2016 &nbsp;Desenvolvido por :
+                <a href="http://www.areamultimidia.com.br/" target="_blank" title="Área Multimídia - Desenvolvimento Web Multimídia, Mobile, Marketing Digital e SEO">Área Multimídia - Desenvolvimento Web Multimídia, Mobile, Marketing Digital e SEO</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER SECTION END-->
+<!-- JAVASCRIPT AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+<!-- CORE JQUERY SCRIPTS -->
+<script src="assets/js/jquery-1.11.1.js"></script>
+<!-- BOOTSTRAP SCRIPTS  -->
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
