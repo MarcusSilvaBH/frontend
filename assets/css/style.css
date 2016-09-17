@@ -365,7 +365,26 @@ and (max-device-width : 480px) {
     padding: 0;
     margin: 0;
     width: 320px; }
+  footer{
+    display: none;
   }
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  footer{
+    display: none;
+  }
+}
+
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  footer{
+    display: none;
+  }
+}
 
 /* iPads (retrato e paisagem) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
